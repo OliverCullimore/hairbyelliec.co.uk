@@ -1,0 +1,148 @@
+:root {
+  --bg-color: #f1f1f1;
+  --bg-color-alt: #fff;
+  --color: #d698b9;
+  --color-alt: #fff;
+  --primary-color: #d698b9;
+  --primary-color-alt: #d16fa3;
+  --font-family: "Signika", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-alt: "Libre Baskerville", var(--font-family);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--color);
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: normal;
+  background-image: url("/images/marleybarn.jpg");
+  min-height: 100vh;
+  padding: min(30px, 5vw);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 0 1rem 0;
+  font-weight: normal;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-alt);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+picture,
+img,
+figure,
+iframe {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 200%;
+}
+
+a,
+a:visited {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: var(--primary-color-alt);
+}
+
+button,
+input,
+.book {
+  background: var(--primary-color);
+  color: var(--color-alt) !important;
+  padding: 10px 20px;
+  border-radius: 200px;
+  box-sizing: border-box;
+  outline: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - (min(30px, 5vw) * 2));
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 20px;
+}
+main > h1 {
+  width: 100%;
+}
+
+.iconify {
+  vertical-align: middle;
+}
+p a .iconify {
+  font-size: 1.3em;
+}
+
+section {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  padding: 55px 15px 0 15px;
+}
+footer p {
+  font-size: 1.1em;
+}
+footer .copyright {
+  font-size: 0.9em;
+}
+.socials {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  font-size: 2.4em;
+  list-style: none;
+}
+.socials li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+#home img {
+  margin-bottom: 15px;
+}
