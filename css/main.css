@@ -60,7 +60,6 @@ iframe {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  border-radius: 200%;
 }
 
 a,
@@ -143,6 +142,24 @@ footer .copyright {
   padding: 0 5px;
 }
 
-#home img {
+#home .profile {
   margin-bottom: 15px;
+  border-radius: 200%;
+}
+
+#instagramfeed {
+  display: none;
+  padding: 55px 0 0 0;
+  grid-gap: 10px;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(2, 48.5%);
+}
+#instagramfeed a:first-of-type {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 769px) {
+  #instagramfeed {
+    grid-template-columns: repeat(3, 32.5%);
+  }
 }
