@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies & run notion
         run: |
           npm ci
-          npm run update
+          npm run instagram
 
       - name: Commit & push changes
         run: |
