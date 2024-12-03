@@ -3,21 +3,11 @@ const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
-// Instagram profile
+// Config
 const instagramProfile = "hairbyellie.c";
-
-// Path to the Instagram JSON feed
-const jsonFeedPath = `https://instagram-graph-cfworker.olivercullimore.workers.dev/${instagramProfile}`;
-
-// Directory to save the downloaded images
+const numPosts = 6;
 const downloadDirectory = "images/instagram";
-
-// Ensure the download directory exists
-function ensureDirectoryExists(dir) {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-}
+const jsonFeedPath = `https://instagram-graph-cfworker.olivercullimore.workers.dev/${instagramProfile}`;
 
 // Function to download & resize the image to a square
 async function downloadImage(url, outputPath, size) {
@@ -26,7 +16,7 @@ async function downloadImage(url, outputPath, size) {
     await sharp(response.data)
       .resize(size, size, { fit: "cover" }) // Resize to a square
       .toFile(outputPath);
-    //console.log(`Resized and saved: ${outputPath}`);
+    console.log(`Resized and saved: ${outputPath}`);
   } catch (error) {
     console.error(`Failed to resize image:`, error.message);
   }
@@ -34,7 +24,10 @@ async function downloadImage(url, outputPath, size) {
 
 // Main function to process the feed and download images
 async function run() {
-  ensureDirectoryExists(downloadDirectory);
+  if (fs.existsSync(downloadDirectory)) {
+    fs.rmSync(downloadDirectory, { recursive: true });
+  }
+  fs.mkdirSync(downloadDirectory, { recursive: true });
 
   // Load the JSON feed
   let jsonData;
@@ -46,9 +39,12 @@ async function run() {
     return;
   }
 
+  // Get latest {numPosts} posts
+  const data = jsonData.data.slice(0, numPosts);
+
   // Download post images & add HTML
   let html = "";
-  jsonData.data.forEach((item) => {
+  data.forEach((item) => {
     const outputPath = path.join(downloadDirectory, `${item.id}.jpg`);
     // Caption
     const caption = (item.caption || "").trim();
