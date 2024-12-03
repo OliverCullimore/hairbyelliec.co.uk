@@ -45,7 +45,7 @@ async function run() {
   // Download post images & add HTML
   let html = "";
   data.forEach((item) => {
-    const outputPath = path.join(downloadDirectory, `${item.id}.jpg`);
+    const outputPath = path.join(downloadDirectory, `${item.id}.png`);
     // Caption
     const caption = (item.caption || "").trim();
     const shortCaption = caption
