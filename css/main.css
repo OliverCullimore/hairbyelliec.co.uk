@@ -154,12 +154,37 @@ footer .copyright {
   grid-auto-flow: row dense;
   grid-template-columns: repeat(2, 48.5%);
 }
+#instagramfeed a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #instagramfeed a:first-of-type {
   grid-column: 1 / -1;
+}
+#instagramfeed a div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  opacity: 0;
+  color: var(--color-alt);
+  font-size: 85%;
+  transition: ease-in-out 0.3s;
 }
 
 @media (min-width: 769px) {
   #instagramfeed {
     grid-template-columns: repeat(3, 32.5%);
+  }
+  #instagramfeed a:hover div {
+    opacity: 0.9;
   }
 }
