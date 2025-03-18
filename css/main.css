@@ -5,6 +5,7 @@
   --color-alt: #fff;
   --primary-color: #d698b9;
   --primary-color-alt: #d16fa3;
+  --secondary-color: #f8ede7;
   --font-family: "Signika", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-alt: "Libre Baskerville", var(--font-family);
 }
@@ -79,7 +80,8 @@ a:focus {
 
 button,
 input,
-.book {
+.book,
+.gift {
   background: var(--primary-color);
   color: var(--color-alt) !important;
   padding: 10px 20px;
@@ -178,6 +180,34 @@ footer .copyright {
   color: var(--color-alt);
   font-size: 85%;
   transition: ease-in-out 0.3s;
+}
+
+#giftvouchers {
+  padding: 55px 0 0 0;
+}
+#giftvouchers a:not(.gift) {
+  display: block;
+}
+#giftvouchers img,
+#giftvouchers .giftvoucherplus {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 230px;
+  margin: 0 7px 15px 7px;
+}
+#giftvouchers .giftvoucherplus {
+  height: 143px;
+  vertical-align: top;
+  background: var(--secondary-color);
+}
+#giftvouchers .giftvoucherplus .iconify {
+  font-size: 200%;
+}
+#giftvouchers .giftvoucherplus span {
+  font-size: 150%;
 }
 
 @media (min-width: 769px) {
