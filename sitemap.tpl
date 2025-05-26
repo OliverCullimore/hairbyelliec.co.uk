@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hairbyelliec.co.uk/</loc>
-    <lastmod>2025-03-18</lastmod>
+    <lastmod>{{date}}</lastmod>
   </url>
   <url>
     <loc>https://hairbyelliec.co.uk/terms/</loc>
-    <lastmod>2025-03-18</lastmod>
+    <lastmod>{{date}}</lastmod>
   </url>
 </urlset>

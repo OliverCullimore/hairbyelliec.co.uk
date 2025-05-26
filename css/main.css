@@ -148,9 +148,15 @@ footer .copyright {
   margin-bottom: 15px;
   border-radius: 200%;
 }
+#home h1 {
+  font-size: 1em;
+}
+#home h2 {
+  font-size: 2em;
+}
 
 #instagramfeed {
-  display: none;
+  display: grid;
   padding: 55px 0 0 0;
   grid-gap: 10px;
   grid-auto-flow: row dense;

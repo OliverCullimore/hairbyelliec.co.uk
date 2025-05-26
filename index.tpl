@@ -33,7 +33,7 @@
     <meta name="description" content="Need a cut, blowdry, colour or hair treatment look no further!">
     <meta name="author" content="Hairbyellie.c">
 
-    <title>Hairbyellie.c | Yeovil</title>
+    <title>Hairbyellie.c | Yeovil Hair @ Marley Barn, Preston Road</title>
 
     <link rel="canonical" href="/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -50,8 +50,9 @@
     <main>
 
       <section>
-        <h1>HAIR BY ELLIE</h1>
-        <img alt="Ellie Cullimore" src="/images/elliecullimore.jpg" width="180" height="180" class="profile" />
+        <h1>Prom Hair | Wedding Hair | Event Hair</h1>
+        <h2>Hairbyellie.c</h2>
+        <img alt="Ellie Cullimore Hair Yeovil Marley Barn" src="/images/elliecullimore.jpg" width="180" height="180" class="profile" />
         <p>Need a cut, blowdry, colour or hair treatment look no further! We are what you're looking for!</p>
         <p>Book an appointment today to look and feel fabulous! Also lots of free parking!</p>
         <p><a href="/book" class="book" target="_blank">Book Online</a></p>
@@ -67,10 +68,10 @@
         <p><a href="/gift" class="gift" target="_blank">Buy Online</a></p>
       </section>
 
-      <section id="instagramfeed"></section>
+      <section id="instagramfeed">{{instagramfeed}}</section>
 
       <footer>
-        <p><a href="https://maps.app.goo.gl/pAMfoLLp5QYvFjfLA" target="_blank" rel="nofollow" title="Location"><span class="iconify" data-icon="ic:outline-location-on"></span>Marley Barn in Yeovil, South Somerset, England</a></p>
+        <p><a href="https://maps.app.goo.gl/pAMfoLLp5QYvFjfLA" target="_blank" rel="nofollow" title="Location"><span class="iconify" data-icon="ic:outline-location-on"></span>Marley Barn on Preston Road in Yeovil, South Somerset, England</a></p>
         <p><a href="mailto:hairbyellie.c@gmail.com"><span class="iconify" data-icon="ic:outline-email"></span> hairbyellie.c@gmail.com</a></p>
         <p><a href="tel:+447301020208"><span class="iconify" data-icon="ic:outline-phone"></span> 07301020208</a></p>
         <ul class="socials">
@@ -83,7 +84,6 @@
 
     </main>
 
-    <script src="/js/main.js?v=18032025" type="application/javascript"></script>
     <script src="//code.iconify.design/3/3.1.0/iconify.min.js" type="application/javascript"></script>
 
     <script id="json-schema" type="application/ld+json">
@@ -98,7 +98,7 @@
           "streetAddress": "Marley Barn"
         },
         "name": "Hairbyellie.c",
-        "description": "Hairbyellie.c is located within Marley Barn in Yeovil, South Somerset, England. Need a cut, blowdry, colour or hair treatment look no further! We are what you're looking for! Book an appointment today to look and feel fabulous! Also lots of free parking!",
+        "description": "Hairbyellie.c is located within Marley Barn on Preston Road in Yeovil, South Somerset, England. Need a cut, blowdry, colour or hair treatment look no further! We are what you're looking for! Book an appointment today to look and feel fabulous! Also lots of free parking!",
         "logo": "/images/icons/favicon.svg",
         "telephone": "+447301020208"
       }

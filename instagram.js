@@ -61,12 +61,26 @@ async function run() {
     // Add post to HTML
     html += `<a href="${item.permalink}" title="${shortCaption}" target="_blank"><img src="/${outputPath}" alt="${shortCaption}" /><div>${caption}</div></a>`;
   });
-  // Save HTML to file?
+  // Update HTML file?
   if (html != "") {
     html =
       `<a href="https://instagram.com/${instagramProfile}" title="@${instagramProfile}" target="_blank"><span class="iconify" data-icon="simple-icons:instagram"></span>&nbsp;${instagramProfile}</a>` +
       html;
-    fs.writeFileSync("instagram.html", html);
+
+    // Update homepage HTML
+    let pageHtml = fs.readFileSync("index.tpl");
+    pageHtml = pageHtml.toString();
+    pageHtml = pageHtml.replace("{{instagramfeed}}", html);
+    fs.writeFileSync("index.html", pageHtml);
+
+    // Update sitemap XML
+    const date = new Date();
+    let sitemapDate = date.toISOString().split("T")[0];
+    let sitemap = fs.readFileSync("sitemap.tpl");
+    sitemap = sitemap.toString();
+    sitemap = sitemap.replaceAll("{{date}}", sitemapDate);
+    fs.writeFileSync("sitemap.xml", sitemap);
+
     console.log("Instagram feed updated");
   } else {
     console.log("Instagram feed empty!");
