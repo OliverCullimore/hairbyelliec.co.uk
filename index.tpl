@@ -50,7 +50,7 @@
     <main>
 
       <section>
-        <h1>Prom Hair | Wedding Hair | Event Hair</h1>
+        <h1>Colour Specialist</h1>
         <h2>Hairbyellie.c</h2>
         <img alt="Ellie Cullimore Hair Yeovil Marley Barn" src="/images/elliecullimore.jpg" width="180" height="180" class="profile" />
         <p>Need a cut, blowdry, colour or hair treatment look no further! We are what you're looking for!</p>
