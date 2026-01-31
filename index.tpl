@@ -14,7 +14,8 @@
     <link rel="icon" type="image/svg+xml" href="/images/icons/favicon.svg" />
     <link rel="shortcut icon" href="/images/icons/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
-    <link rel="manifest" href="/images/icons/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="Hairbyellie.c" />
+    <link rel="manifest" href="/images/icons/manifest.json" />
 
     <meta property="og:locale" content="en_GB">
     <meta property="og:type" content="website">
@@ -79,7 +80,7 @@
           <li><a href="https://facebook.com/hairbyelliecullimore" target="_blank" rel="nofollow" title="Facebook"><span class="iconify" data-icon="simple-icons:facebook"></span></a></li>
           <li><a href="https://tiktok.com/@hairbyellie.c" target="_blank" rel="nofollow" title="TikTok"><span class="iconify" data-icon="simple-icons:tiktok"></span></a></li>
         </ul>
-        <p class="copyright">Copyright &copy; Hairbyellie.c 2025</p>
+        <p class="copyright">Copyright &copy; Hairbyellie.c 2026</p>
       </footer>
 
     </main>
